@@ -1,0 +1,94 @@
+/* ---------------------------------------------------------------- */
+/* 21.Latest Blog                              
+/* ---------------------------------------------------------------- */
+.blog-item {
+    border-radius: 5px;
+    transition: all 0.25s linear;
+    box-shadow: 0 10px 28px 0 $color_shadow;
+    &:hover {
+        box-shadow: 0 23px 49px 0 $color_shadow;
+    }
+    .blog-inner {
+        padding: 30px;
+        .blog-title {
+            margin-bottom: 15px;
+            > a {
+                color: $color_black;
+                &:hover {
+                    color: $color_primary;
+                }
+            }
+        }
+        > .blog-meta {
+            margin-bottom: 15px;
+            span {
+                font : {
+                    size: 0.95rem;
+                }
+                color: $color_black;
+                i {
+                    color: $color_primary;
+                    margin-right: 10px;
+                    text-align: center;
+                    display: inline-block;
+                    font : {
+                        size: 0.95rem;
+                    }
+                }
+            }
+        }
+        > .blog-desc {
+            margin-bottom: 15px;
+        }
+        .blog-more-link {
+            border-radius: 5px;
+            font-size: 14px;
+            padding: 10px 20px;
+            display: inline-block;
+            text-transform: capitalize;
+            transition: all 0.25s linear;
+            color: $color_white;
+            background: $color_primary;
+            &:hover {
+                background: darken($color_primary , 5%);
+                color: $color_white;  
+                animation: pulseOrange 1s 1 linear;
+                transform: translateY(-5px);
+            }
+        }
+    }
+    .blog-img {
+        position: relative;
+        overflow: hidden;
+        border-radius: 5px;
+        img {
+            transition: all 0.5s linear;
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+}
+/* ---------------------------------------------------------------- */
+/* Responsive Media Query
+ * Medium devices (tablets, less than 992px)
+/* ---------------------------------------------------------------- */
+@media only screen and (max-width:991.98px) {
+   .latest-blog-resp:nth-child(3) {
+        margin-top: 30px;
+   }
+}
+/* ---------------------------------------------------------------- */
+/* Responsive Media Query
+ * Small devices (landscape phones, less than 768px)
+/* ---------------------------------------------------------------- */
+@media only screen and (max-width:767.98px) {
+    .latest-blog-resp {
+        margin-top: 30px;
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+}
+
+

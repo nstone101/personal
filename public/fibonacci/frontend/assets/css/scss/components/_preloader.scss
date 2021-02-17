@@ -1,0 +1,37 @@
+/* ---------------------------------------------------------------- */
+/* 08.Preloader                            
+/* ---------------------------------------------------------------- */
+.preloader-wrap {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 4444;
+	position: fixed;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: $color_white; 
+	flex-direction: column;
+	.preloader-inner {
+		width: 70px;
+		height: 35px;
+		overflow: hidden;
+		position: absolute;
+		top: calc(50% - 17px);
+		left: calc(50% - 35px);
+		#loader {
+			width: 70px;
+			height: 70px;
+			border-radius: 50%;
+			border-style: solid;
+			border-top-color: $color_primary;
+			border-right-color: $color_primary;
+			border-left-color: transparent;
+			border-bottom-color: transparent;
+			box-sizing: border-box;
+			animation: preLoader 3s ease-in-out infinite;
+			transform: rotate(-200deg)
+		}
+	}
+}

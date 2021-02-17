@@ -1,0 +1,27 @@
+/* ---------------------------------------------------------------- */
+/* 32.Home Page Youtube Video                               
+/* ---------------------------------------------------------------- */
+.hero_video {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    -webkit-object-fit: scale-down;
+    object-fit: scale-down;
+    &:after {
+        display: none;
+    }
+    .hero-overlay {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 15;
+        opacity: 0.6;
+        background: $color_dark_bg;
+    }
+    .video-content {
+        z-index: 27;
+        position: relative;
+    }
+}

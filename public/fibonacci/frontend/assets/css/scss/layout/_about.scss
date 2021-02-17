@@ -1,0 +1,100 @@
+/* ---------------------------------------------------------------- */
+/* 11.About                             
+/* ---------------------------------------------------------------- */
+.about-inner {
+    .about-title {
+        margin-bottom: 20px;
+        b {
+            color: $color_primary;
+        }
+    }
+    .about-text, .about-list {
+        margin-bottom: 30px;
+    }
+    .about-list {
+        > li {
+            margin-bottom: 10px;
+            
+            > span {
+                margin-left: 10px;
+                text-align: left;
+                flex: 0 0 70%;
+            }
+            > span::before {
+                content: ":";
+                padding-right:15px;
+            }
+            > b {
+                font : {
+                    family: $font_heading;
+                    size: 1rem;
+                    weight: 700;
+                }
+                text-transform: capitalize;
+                color: $color_black;
+                flex: 0 0 30%;
+            }
+        }
+    }
+    .about-video-btn{
+        background: $color_primary;
+        height: 56px;
+        width: 56px;
+        line-height: 56px;
+        border-radius: 5px;
+        text-align: center;
+        transition: all 0.25s linear;
+        color: $color_white;
+        &:hover {
+            background: darken($color_primary , 5%);
+            color: $color_white;  
+            animation: pulseOrange 1s 1 linear;
+            transform: translateY(-5px);
+        }
+    } 
+}
+.about-image-pattern {
+    position: relative;
+    img {
+        position: relative;
+        z-index: 20;
+    }
+    &:before {
+        content: "";
+        left: 50%;
+        width: 90%;
+        height: 60px;
+        bottom: -20px;
+        position: absolute;
+        border-radius: 5px;
+        background: $color_primary;
+        transform: translateX(-50%);
+    }
+}   
+/* ---------------------------------------------------------------- */
+/* Responsive Media Query
+ * Medium devices (tablets, less than 992px)
+/* ---------------------------------------------------------------- */
+@media only screen and (max-width:991.98px) {
+    .about-image-pattern {
+       display: none;
+    }
+}
+/* ---------------------------------------------------------------- */
+/* Responsive Media Query
+ * Extra small devices (portrait phones, less than 576px)
+/* ---------------------------------------------------------------- */
+@media only screen and (max-width:575.98px) {
+    .about-inner {
+        .about-list {
+            li {
+                > span {
+                    flex: 0 0 75%;
+                }
+                > b {
+                    flex: 0 0 25%;
+                }
+            }
+        }
+    }
+}

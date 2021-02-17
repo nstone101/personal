@@ -1,0 +1,124 @@
+/* ---------------------------------------------------------------- */
+/* 12.Experience                            
+/* ---------------------------------------------------------------- */
+// Resume Tab Content
+.resume-tab-content {
+    .experience-item {
+        margin-bottom: 30px;
+        .experience-item-inner {
+            padding: 30px;
+            position: relative;
+            background: $color_white;
+            transition: all 0.25s linear;
+            box-shadow: 0 10px 28px 0 $color_shadow;
+            &:hover {
+                box-shadow: 0 23px 49px 0 $color_shadow;
+            }
+            .experience-item-header {
+                i {
+                    display: inline-block;
+                    height: 80px;
+                    width: 80px;
+                    text-align: center;
+                    font-size: 40px;
+                    line-height: 80px;
+                    border-radius: 5px;
+                    background: $color_primary;
+                    color: $color_white;
+                    margin-bottom: 30px;
+                }
+            }
+            .experience-item-body {
+                h5 {
+                    margin-bottom: 10px;
+                }
+                .experience-date {
+                    color: $color_primary;
+                    display: block;
+                    font: {
+                        weight: 700;
+                    }
+                    margin-bottom: 10px;
+                }
+            }
+        }
+        &:nth-child(5) {
+           margin-bottom: 0;
+        }
+        &:nth-child(6) {
+            margin-bottom: 0;
+        }
+    }
+    &.active {
+        display: block;
+    }
+}
+.experience-line-border {
+    height: 100%;
+    position: relative;
+    &:after {
+        content: "";
+        height: 100%;
+        top: 0;
+        left: 50%;
+        width: 3px;
+        background: $color_primary;
+        position: absolute;
+        transform: translateX(-50%);
+    }
+    .experience-year-top, .experience-year-bottom {
+        left: 50%; 
+        background: $color_primary;
+        color: $color_white;
+        position: absolute;
+        border-radius: 5px;
+        transform: translateX(-50%);
+        i {
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            display: block;
+            font : {
+                size: 20px;
+            }
+        }
+    }
+    .experience-year-top {
+        top: 0;
+        z-index: 36;
+    }
+    .experience-year-bottom {
+        bottom: 0;
+        z-index: 37;
+    }
+}
+/* ---------------------------------------------------------------- */
+/* Responsive Media Query
+/* Small devices (landscape phones, less than 768px)
+/* ---------------------------------------------------------------- */
+@media only screen and (max-width: 767.98px) {
+    .resume-tab-content {
+        .experience-item {
+            &:nth-child(5) {
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+/* ---------------------------------------------------------------- */
+/* Responsive Media Query
+ * Extra small devices (portrait phones, less than 576px)
+/* ---------------------------------------------------------------- */
+@media only screen and (max-width:575.98px) {
+    .resume-tab-link-wrap {
+        .resume-tab-link-item {
+            text-align: center;
+            max-width: 50%;
+            a {
+                height: 50px;
+                line-height: 50px;
+            }
+        }      
+    }    
+}

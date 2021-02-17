@@ -1,0 +1,76 @@
+/* ---------------------------------------------------------------- */
+/* 04.Buttons                                                     
+/* ---------------------------------------------------------------- */
+.default-button, .outline-button {
+    padding: 16px 40px;
+    border-radius: 5px;
+    letter-spacing: 0.5px;
+    display: inline-block;
+    text-transform: capitalize;
+    transition: all 0.25s linear;
+}
+.default-button {
+    background: $color_primary;
+    color: $color_white;
+    &:hover {
+        background: darken($color_primary , 5%);
+        color: $color_white;  
+        animation: pulseOrange 1s 1 linear;
+        transform: translateY(-5px);
+    }
+}
+.outline-button {
+    color: $color_primary;
+    border:2px solid transparent;
+    padding: 14px 40px;
+    background: $color_white;
+    &:hover {
+        border-color: $color_white;
+        background: transparent;
+        color: $color_white;  
+        animation: pulseWhite 1s 1 linear forwards;
+        transform: translateY(-5px);
+    }
+}
+.scroll-top-btn {
+    position: fixed;
+    right: 10px;
+    bottom: 0;
+    z-index: 100;
+    width: 56px;
+    height: 56px;
+    line-height: 56px;
+    border-radius: 5px;
+    text-align: center;
+    opacity: 0;
+    visibility: hidden;
+    background: $color_primary;
+    transition: all 0.25s ease;
+    color: $color_white !important;
+    box-shadow: 0 0 0 0 rgba($color_primary, 1);
+    animation: scrollPulse 2s infinite forwards;
+    &.active {
+        opacity: 1;
+        bottom: 20px;
+        visibility: visible;
+    }
+    &:hover {
+        animation: none;
+    }
+}
+.down-scroll {
+    font-size: 16px;
+    border-radius: 5px;
+    bottom: 15px;
+    left: 50%;
+    z-index: 15;
+    width: 56px;
+    height: 56px;
+    line-height: 56px;
+    transform: translateX(-50%);
+    cursor: pointer;
+    color: $color_white !important;
+    background: $color_primary;
+    position: absolute;
+    text-align: center;
+}

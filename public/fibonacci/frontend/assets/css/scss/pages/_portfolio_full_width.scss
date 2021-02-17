@@ -1,0 +1,10 @@
+/* ---------------------------------------------------------------- */
+/* 25.Portfolio Full Width                             
+/* ---------------------------------------------------------------- */
+.portfolio-full-width-item {
+    padding: 0 !important;
+    margin:0;
+    .portfolio-back, .portfolio-inner {
+        border-radius: 0 !important;
+    }
+}

@@ -1,0 +1,50 @@
+/* ------------------------------------------------------------------- */
+/* 17.Testimonial                                                     
+/* ------------------------------------------------------------------- */
+.testimonial-item {
+    border-radius: 5px;
+    padding: 30px;
+    background: $color_white;
+    .testimonial-img {
+        margin: 0 0 20px 0;
+        img {
+            width: auto !important;
+            display: inline-block; 
+            border-radius: 5px;
+            box-shadow: 0 23px 49px 0 $color_shadow;
+        }
+    }
+    .testimonial-item-body {
+        .testimonial-text {
+            margin: 0 0 15px 0;
+            > q {
+                font : {
+                    style: italic;
+                }
+            }
+        }
+        .testimonial-details {
+            margin-bottom: 15px;
+            > h5 {
+                display: block;
+                text-transform: capitalize;
+                margin-bottom: 10px;
+            }
+            > span {
+                color: $color_primary;
+                font: {
+                    weight: 500;
+                }
+            }
+        }
+        .testimonial-rating {
+            i {
+                color: $color_primary;
+                margin-right: 3px;
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}

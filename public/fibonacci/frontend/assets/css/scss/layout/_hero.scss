@@ -1,0 +1,62 @@
+/* ---------------------------------------------------------------- */
+/* 10.Hero                                                    
+/* ---------------------------------------------------------------- */
+.hero-section {
+    position: relative;
+    overflow: hidden;
+    z-index: 35;
+    height: 100vh;
+    &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -4;
+        background: $color_dark_bg;
+        opacity: 0.5;
+    }
+    .hero-section-inner {
+        .hero-title {
+            margin-bottom: 20px;
+            font : {
+                weight: 700;
+            }
+            color: $color_primary;
+            span {
+                color: $color_white;
+            }
+        }
+        .hero-text {
+            font : {
+                size: 1.1rem;
+                style: italic;
+            }
+            margin-bottom: 30px;
+            color: $color_white;
+            opacity: 0.8;
+        }
+    }    
+}
+/* ---------------------------------------------------------------- */
+/* Responsive Media Query
+ * Medium devices (tablets, less than 992px)
+/* ---------------------------------------------------------------- */
+@media only screen and (max-width:991.98px) {
+	.hero-section {
+        background-position: left;
+        .hero-row {
+            justify-content: center;
+            .hero-section-inner {
+                text-align: center;
+                .hero-title {
+                    font : {
+                        size: 2.5rem;
+                    }
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+}

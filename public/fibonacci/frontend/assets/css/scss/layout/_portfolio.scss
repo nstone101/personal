@@ -1,0 +1,172 @@
+/* ---------------------------------------------------------------- */
+/* 16.Portfolio                                                     
+/* ---------------------------------------------------------------- */
+.portfolio-filter-wrap {
+    text-align: center;
+    .portfolio-filter {
+        margin-bottom: 50px;
+        a {
+            color: $color_black;
+            height: 56px;
+            padding: 0 40px;
+            font : {
+                weight:500;
+            }
+            line-height: 56px;
+            border-radius: 5px;
+            position: relative;
+            margin-right: 15px;
+            text-align: center;
+            border:2px solid $color_primary;
+            transition: all 0.25s ease;
+            &:after {
+                content: '';
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                height: 100%;
+                z-index: -4;
+                position: absolute;
+                background-color: $color_primary;
+                transition: transform 0.4s ease;
+                transform-origin: 100% 0;
+                transform: scaleX(0);
+            }
+            &:last-child {
+                margin-right: 0;
+            }
+            &:hover {
+                color: $color_white;
+                &:after {
+                    transform: scaleX(1);
+                    transform-origin: 0 0;
+                }
+            }
+            &.current {
+                color: $color_white;
+                background: $color_primary;
+                position: relative;
+                &:after {
+                    content: '';
+                    left: 0;
+                    bottom: 0;
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    background-color: $color_primary;
+                }
+            }
+        }
+    }
+}
+// Portfolio Item
+.glry-item {
+    margin: 0px 0px 30px 0px;
+    padding-left: 10px;
+    border-radius: 5px;
+    &:hover .portfolio-back .portfolio-buttons {
+        opacity: 1;
+        display: block;
+        visibility: visible;
+        transition-delay: 0.3s;
+        animation: fadeInUp 0.3s ease-in-out forwards;
+    }
+    &:hover .portfolio-back::after, &:hover .portfolio-back::before {
+        top: 0;
+        transition: all 0.5s;
+    }
+    .portfolio-inner {
+        overflow: hidden;
+        position: relative;
+        border-radius: 5px;
+        box-shadow: 0 10px 28px 0 $color_shadow;
+        .project-title {
+            width: 100%;
+            bottom: -150px;
+            padding: 30px;
+            text-align: center;
+            position: absolute;
+            background:$color_white;
+            transition: all 0.5s ease;
+            transform-origin:0 100%;    
+        }
+    }
+    &:hover .project-title {
+        bottom: 0;
+    }
+    .portfolio-back {
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        text-align: center;
+        border-radius: 5px;
+        @include flexCenter;
+        flex-direction: column;
+        transition: all 0.4s;
+        &:after, &:before {
+            content: "";
+            width: 50%;
+            height: 100%;
+            opacity: 0.6;
+            position: absolute;
+            background: $color_dark_bg;
+            transition: all 0.5s;
+            transition-delay: 0.25s;
+        }
+        &:after {
+            left: 0;
+            top: -100%;
+        }
+        &:before {
+            right: 0;
+            top: 100%;
+        }
+        .portfolio-buttons {
+            z-index: 73;
+            animation: fadeOutDown 0.3s ease-in-out forwards;
+            a {
+                height: 56px;
+                width: 56px;
+                line-height: 56px;
+                border-radius: 5px;
+                text-align: center;
+                margin-right: 10px;
+                display: inline-block;
+                background: $color_white;
+                color: $color_primary;
+                border: 2px solid transparent;
+                transition: all 0.25s ease;
+                &:hover {
+                    color: $color_white;
+                    background: transparent;
+                    border-color: $color_white;
+                    animation: pulseWhite 1s 1 linear forwards;
+                    transform: translateY(-5px);
+                }
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}
+/* ---------------------------------------------------------------- */
+/* Responsive Media Query
+ * Extra small devices (portrait phones, less than 576px)
+/* ---------------------------------------------------------------- */
+@media only screen and (max-width:575.98px) {
+    .portfolio-filter-wrap {
+        .portfolio-filter {
+            flex-direction: column;
+            a {
+                margin-right: 0;
+                margin-bottom: 15px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}

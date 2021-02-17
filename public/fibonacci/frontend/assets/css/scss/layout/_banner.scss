@@ -1,0 +1,30 @@
+/* ---------------------------------------------------------------- */
+/* 20.Banner                            
+/* ---------------------------------------------------------------- */
+.banner-wrap {
+    background: $color_primary;
+    .banner-inner {
+        .banner-title {
+            display: block;
+            color: $color_white;
+        }
+    }
+}
+/* ---------------------------------------------------------------- */
+/* Responsive Media Query
+/* Medium devices (tablets, less than 992px)
+/* ---------------------------------------------------------------- */
+@media only screen and (max-width: 991.98px) {
+    .banner-wrap {
+        text-align: center;
+        .banner-inner {
+           text-align: center;
+           .banner-title {
+                margin-bottom: 30px;
+            }
+        }
+        .banner-right {
+            text-align: center !important;
+        }
+    }
+}

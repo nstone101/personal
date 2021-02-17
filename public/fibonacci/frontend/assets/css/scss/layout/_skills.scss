@@ -1,0 +1,77 @@
+/* ------------------------------------------------------------------- */
+/* 13.Skills                                                   
+/* ------------------------------------------------------------------- */
+.skills-inner {
+    .skills-title {
+        margin-bottom: 15px;
+        b {
+            color: $color_primary;
+        }
+    }
+    .skills-text {
+        margin-bottom: 24px;
+    }
+}
+.skills-progress-wrap {
+    margin-bottom: 30px;
+    .skills-item {
+        position: relative;
+        overflow: hidden;
+        margin-bottom: 15px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        .skills-progress-bar {
+            height: 10px;
+            position: relative;
+            background: $color_grey_secondary;
+            border-radius: 100px;
+            margin-top: 15px;
+            .skills-progress-value {
+                position: absolute;
+                height: 100%;
+                background: $color_primary;
+                border-radius: 100px;
+            }
+        }
+        .skills-item-text {
+            h6 {
+                font : {
+                    size: 1.06rem;
+                    
+                }
+                .skill-percent {
+                    float: right;
+                }
+            }
+        }
+    }
+}
+.skills-image {
+    .skills-image-pattern {
+        position: relative;
+        &:before {
+            content: "";
+            left: 50%;
+            width: 90%;
+            height: 60px;
+            bottom: -20px;
+            position: absolute;
+            border-radius: 5px;
+            background: $color_primary;
+            transform: translateX(-50%);
+        }
+        img {
+            position: relative;
+            z-index: 20;
+        }
+    }  
+}/* ---------------------------------------------------------------- */
+/* Responsive Media Query
+ * Medium devices (tablets, less than 992px)
+/* ---------------------------------------------------------------- */
+@media only screen and (max-width:991.98px) {
+    .skills-image {
+        display: none;
+    }
+}

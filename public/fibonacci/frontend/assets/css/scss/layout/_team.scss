@@ -1,0 +1,71 @@
+/* ---------------------------------------------------------------- */
+/* 18.Team                                                    
+/* ---------------------------------------------------------------- */
+.team-card {
+    border-radius: 5px;
+    text-align: center;
+    transition: all 0.25s linear;
+    img {
+        border-radius: 5px;
+        margin-bottom: 30px;
+        box-shadow: 0 23px 49px 0 $color_shadow;
+    }
+    .team-body {
+        h5 {
+            margin-bottom: 10px;
+        }
+        span {
+            color: $color_primary;
+            font: {
+                weight: 500;
+            }
+        }
+        .team-social {
+            margin-top: 20px;
+            a {
+                display: inline-block;
+                height: 40px;
+                width: 40px;
+                line-height: 40px;
+                text-align: center;
+                background: $color_primary;
+                color: $color_white;
+                border-radius: 5px;
+                margin-right: 5px;
+                transition: all 0.25s linear;
+                &:hover {
+                    background: darken($color_primary , 5%);
+                    color: $color_white;  
+                    animation: pulseOrange 1s 1 linear;
+                    transform: translateY(-5px);
+                }
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}
+/* ---------------------------------------------------------------- */
+/* Responsive Media Query
+ * Medium devices (tablets, less than 992px)
+/* ---------------------------------------------------------------- */
+@media only screen and (max-width:991.98px) {
+    .team-card-resp {
+        &:nth-child(1), &:nth-child(2) {
+            margin-bottom: 50px;
+        }
+    }
+}
+/* ---------------------------------------------------------------- */
+/* Responsive Media Query
+ * Extra small devices (portrait phones, less than 576px)
+/* ---------------------------------------------------------------- */
+@media only screen and (max-width:575.98px) {
+    .team-card-resp {
+        margin-bottom: 50px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}

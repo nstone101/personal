@@ -1,0 +1,175 @@
+/* ---------------------------------------------------------------- */
+/* 26.Blog Single                              
+/* ---------------------------------------------------------------- */
+.blog-single-inner {
+    .blog-single-img {
+        margin-bottom: 30px;
+    }
+    .blog-single-title {
+        font : {
+            size: 2rem;
+        }
+        margin-bottom: 20px;
+    }
+    .blog-links {
+        margin-bottom: 20px;
+        a {
+            margin-right: 10px;
+            color: $color_black;
+            font: {
+                weight: 500;
+            }
+            &:last-child {
+                margin-right: 0;
+            }
+            i {
+                color: $color_primary;
+                margin-right: 10px;
+            }
+        }
+    }
+    .blog-inner-text {
+        margin-bottom: 10px;
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+    .blog-post-quote {
+        blockquote {
+            padding: 30px;
+            margin: 30px 0;
+            border-radius: 5px;
+            border-left: 5px solid $color_primary;
+            box-shadow: 0 10px 20px 0 $color_shadow;
+            p {
+                position: relative;
+                font : {
+                    size: 1.2rem;
+                    style: italic;
+                }
+                color: $color_black;
+                &:after {
+                    content: "\f10d";
+                    top: 0;
+                    left: 0;
+                    color: $color_primary;
+                    font: {
+                        family: "Font Awesome 5 Free";
+                        weight: 600;
+                        size: 3rem;
+                    }
+                    position: absolute;
+                    opacity: 0.1;
+                    z-index: -16;
+                }
+                strong {
+                    margin-top: 10px;
+                    display: block;
+                    color: $color_black;
+                }
+            }
+        }
+    }
+}
+/* Blog Sidebar */
+.blog-sidebar {
+    .blog-widgets {
+        margin-bottom: 30px;
+        .blog-search-btn {
+            top: 0;
+            right: 0;
+            border: none;
+            width: 60px;
+            outline: none;
+            height: 100%;
+            position: absolute;
+            background: $color_primary;
+            color: $color_white;
+            border-radius: 0 5px 5px 0;
+        }
+        .blog-search-bar {
+            width: 100%;
+            .search-form-control {
+                width: 100%;
+                display: block;
+                border-radius: 5px;
+                margin-bottom: 30px;
+                padding: 16px 20px;
+                border: 1px solid $color_soft_grey;
+                transition: all 0.25s ease;
+                &:focus {
+                    border-color: $color_black;
+                }
+            }
+        }
+    }   
+    .recent-post-item {
+        margin-bottom: 14px;
+        display: flex;
+        .recent-post-img {
+            flex: 0 0 100px;
+        }
+        .recent-post-title {
+            margin-bottom: 10px;
+            line-height: 1.5;
+            &:hover {
+                color: $color_primary;
+            }
+        }
+        .recent-post-date {
+            font : {
+                size: 15px;
+            }
+        }
+        .recent-post-date i {
+            margin-right: 8px;
+            color: $color_primary;
+        }
+    }
+    .blog-category-list {
+        li {
+            padding: 12px 0;
+            border-bottom: 1px solid $color_soft_grey;
+            a {
+                color: $color_black;
+                &:hover {
+                    color: $color_primary;
+                    text-decoration: underline;
+                }
+                .category-count {
+                    float: right;
+                }
+            }
+        }
+    }
+    .blog-tags li {
+        float: left;
+        a {
+            margin: 3px;
+            font : {
+                size: 14px;
+            }
+            display: inline-block;
+            color: $color_black;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: all 0.25s linear;
+            box-shadow: 0 10px 20px 0 $color_shadow;
+            &:hover,&.active {
+                background: $color_primary;
+                color: $color_white;
+            }
+        }
+    }
+}
+/* ---------------------------------------------------------------- */
+/* Responsive Media Query
+ * Medium devices (tablets, less than 992px)
+/* ---------------------------------------------------------------- */
+@media only screen and (max-width: 991.98px) {
+    .blog-single-inner {
+        .blog-sidebar {
+            margin-top: 30px;
+        }
+    }
+}

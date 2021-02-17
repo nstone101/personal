@@ -1,0 +1,33 @@
+/***************************************************************************************
+    Template Name    : Fibonacci | Responsive Bootstrap 4.1.3 Portfolio Admin Template
+    Author           : ElseColor
+    Version          : 1.0.0
+    Created          : 2020
+    File Description : Responsive css file of the template
+****************************************************************************************/
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+    .custom-card {
+        margin-bottom: 20px!important;
+    }
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+    #circles-3 {
+        margin-top: 22px;
+    }
+
+    #circles-2 {
+        margin-top: 22px;
+    }
+
+    .dashboard-circles.pb-4 {
+        padding-bottom: 1rem!important;
+    }
+
+    .card .card-header .ml-auto .btn-round.btn {
+        padding: .45rem 1rem !important;
+        font-size: 10px !important;
+    }
+}

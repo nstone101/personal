@@ -1,0 +1,115 @@
+/* ---------------------------------------------------------------- */
+/* 24.Portfolio Single                              
+/* ---------------------------------------------------------------- */
+.portfolio-single-section {
+    .portfolio-carousel {
+        margin-bottom: 30px;
+        .owl-nav {
+            .owl-prev, .owl-next {
+                margin: 0;
+                top: 50%;
+                color: $color_white;
+                height: 56px;
+                width: 56px;
+                position: absolute;
+                text-align: center;
+                line-height: 56px;
+                background: $color_primary;
+                transform: translateY(-50%);
+            }
+            .owl-prev {
+                left: 15px;
+            }
+            .owl-next {
+                right: 15px;
+            }
+        }
+    }
+}
+.portolio-single-inner {
+    .portfolio-inner-title {
+        margin-bottom: 15px;
+        font : {
+            size: 1.5rem;
+        }
+    }
+    .portfolio-inner-text {
+        margin-bottom: 10px;
+        &:last-of-type {
+            margin-bottom: 0;
+        }
+    }
+    .project-details {
+        .project-info {
+            margin-bottom: 30px;
+            > li {
+                margin-bottom: 10px;
+                > span {
+                    text-align: left;
+                    flex: 0 0 50%;
+                }
+                > span::before {
+                    content: ":";
+                    padding-right:15px;
+                }
+                > b {
+                    font : {
+                        family: $font_heading;
+                        size: 1rem;
+                        weight: 700;
+                    }
+                    text-transform: capitalize;
+                    color: $color_black;
+                    flex: 0 0 50%;
+                }
+            }
+        }
+        .project-meta {
+            .project-meta-box {
+                text-align: left;
+                flex: 0 0 50%;
+                h6 {
+                    margin-bottom: 15px;
+                }
+                h4 {
+                    border-radius: 5px;
+                    padding:0 21px;
+                    height: 40px;
+                    line-height: 40px;
+                    background: $color_primary;
+                    color: $color_white;
+                    position: relative;
+                    display: inline-block;
+                    font : {
+                        size: 1rem;
+                        weight: 600;
+                    }
+                    &:after {
+                        content: "";
+                        position: absolute;
+                        left: -18px;
+                        top: 50%;
+                        border: 10px solid;
+                        border-color: transparent $color_primary transparent transparent;
+                        transform: translateY(-50%);
+                    }
+                    span {
+                        display: inline-block;
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+/* ---------------------------------------------------------------- */
+/* Responsive Media Query
+/* Small devices (landscape phones, less than 768px)
+/* ---------------------------------------------------------------- */
+@media only screen and (max-width: 767.98px) {
+    .portfolio-single-section {
+        .project-details {
+            margin-top: 30px;
+        }
+    }
+}

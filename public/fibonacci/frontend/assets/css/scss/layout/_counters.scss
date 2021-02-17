@@ -1,0 +1,72 @@
+/* ---------------------------------------------------------------- */
+/* 14.Counters                            
+/* ---------------------------------------------------------------- */
+.counters-wrap {
+    background: $color_white;
+    .counter-item {
+        text-align: center;
+        .counter-body {
+            padding: 40px 30px;
+            border-radius: 5px;
+            background: $color_white;
+            transition: all 0.25s linear;
+            box-shadow: 0 10px 28px 0 $color_shadow;
+            &:hover {
+                box-shadow: 0 23px 49px 0 $color_shadow;
+            }
+            i {
+                display: inline-block;
+                height: 80px;
+                width: 80px;
+                text-align: center;
+                font-size: 40px;
+                line-height: 80px;
+                border-radius: 5px;
+                background: $color_primary;
+                color: $color_white;
+                margin-bottom: 20px;
+            }
+            h5 {
+                font : {
+                    size: 1rem;
+                    weight: 600;
+                }
+            }
+            span {
+                color: $color_black;
+                display: block;
+                line-height: 1.2;
+                margin-bottom: 8px;
+                font : {
+                    size: 3rem;
+                    family: $font_heading; 
+                    weight: 700;
+                }
+            }
+        }
+    }
+}
+/* ---------------------------------------------------------------- */
+/* Responsive Media Query
+ * Medium devices (tablets, less than 992px)
+/* ---------------------------------------------------------------- */
+@media only screen and (max-width:991.98px) {
+    .counter-item:nth-child(3) {
+        margin-top: 30px;
+    }
+    .counter-item:nth-child(4) {
+        margin-top: 30px;
+    }
+}
+/* ---------------------------------------------------------------- */
+/* Responsive Media Query
+ * Extra small devices (portrait phones, less than 576px)
+/* ---------------------------------------------------------------- */
+@media only screen and (max-width:575.98px) {
+    .counter-item {
+        margin-top: 30px;
+    }
+    .counter-item:nth-child(1) {
+        margin-top: 0;
+    }
+}

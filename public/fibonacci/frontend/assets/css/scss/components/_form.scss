@@ -1,0 +1,63 @@
+/* ---------------------------------------------------------------- */
+/* 06.Form(Input, Comment)                             
+/* ---------------------------------------------------------------- */
+.comments-wrap {
+    .comments-item {
+        background: $color_white;
+        margin-top: 30px;
+        .comments-title {
+            margin-bottom: 10px;
+        }
+        .comment-text {
+            margin-bottom: 10px;
+        }
+        .comments-reply-btn {
+            color: $color_primary;
+            text-transform: capitalize;
+            display: inline-block;
+            font-weight: 500;
+        }
+    }
+}
+.comment-block-mt {
+    margin-top: 30px;
+}
+.comment-form-group {
+    position: relative;
+    .comment-form-control {
+        width: 100%;
+        display: block;
+        border-radius: 5px;
+        margin-bottom: 30px;
+        padding: 16px 20px;
+        border: 1px solid $color_soft_grey;
+        transition: all 0.25s ease;
+        &:focus {
+            border-color: $color_black;
+        }
+    }
+    button {
+        outline: none;
+        border: none;
+    }
+}
+.form-group {
+    position: relative;
+    .form-input {
+        width: 100%;
+        display: block;
+        border-radius: 5px;
+        margin-bottom: 30px;
+        padding: 16px 16px 16px 40px;
+        border: 1px solid $color_soft_grey;
+        transition: all 0.25s ease;
+        &:focus {
+            border-color: $color_black;
+        }
+     }
+     span {
+         position: absolute;
+         top: 16px;
+         left: 16px;
+     }
+}
