@@ -59,8 +59,7 @@
                                 <i class="fas fa-draw-polygon"></i>
                                 <h5>Logo Design</h5>
                                 <p>
-                                    Sed ut perspiciatis omnis iste natus error sit
-                                    laudantium, illo veritatis et quasi beatae vitae dicta sunt explicabo.
+                                    Get top Graphic Design professionals to create your business or personal logos and infographics. From minimal and modern, flat, 3D, character, creative iconography, and of course brilliant text logos without limits. We'll keep making them until we get it right. Our service prices start at $120 for a branding and style guide as well as a text or modern minimal logo design custom made to stand out in 2021. Ask about our re-branding services, it's an even greater standout service that we provide that includes logo design, as well as naming, domain acquisitioning and negotiating (*if the domain exists but is owned we will negotiate for it at the lowest possible price, our ability to do it better than most is our over 500 premium domains that we own and register privately at any given time, we're one of the largest private holders of domain names in business space with TLDs .com, .digital .co, .net, and .io but there's more, all of our domains are high demand and we deal in these negotiations with private domain owners and brokers, and domain registrars or hosting providers all the time and our ability to trade profitable domains gives us the upper hand on most negotiations whether it's through another broker we trade valuable domains in exchange for their purchasing our wanted domain or we directly buy or trade for your special specific brands domain to-be, if required. More times than not, we can get you a more clever, shorter (5-6 letter domain or high demand keyword domains with unique and creative play on your brand.. i.e. Kansas City's incubator - InKCubate.com, bitnovia.com, agrim.site) know how to maximize the most out of domains for SEO purposes so doing the naming, branding, and domains altogether are a major step and a time consuming part of starting or re-launching a business under a newly created brand or public image.)
                                 </p>
                             </div>
                         </div>
@@ -176,9 +175,7 @@
                         <div class="why-choose-me-inner">
                             <h4 class="why-choose-me-title">why should you work with me ?</h4>
                             <p class="why-choose-me-text">
-                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                                when an unknown printer took a galley of type and scrambled it
-                                to make a type specimen book.
+                                Many reasons, but namely because i'm a professional with a great bag of highly useful skills including taking on multiple roles or large projects and being able to dissect what needs to be done, organize that information for development and design for executives and non-technical personnel as well as advanced teams of developers and engineers. My company takes on projects from other companies because we do just that with our spin on optimization and automation of tasks and practices. Cloud computing now allows for even higher levels of coordination of efforts into well-oiled multi-functional and centralized systems of technology management.
                             </p>
                             <p class="why-choose-me-text">
                                 Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
@@ -207,7 +204,7 @@
                                         <div class="why-choose-me-icon">
                                             <i class="fa fa-check"></i>
                                         </div>
-                                        <h6>Clean & Comment Code</h6>
+                                        <h6>Enterprise IT &amp; Data Compliance</h6>
                                     </div>
                                 </div>
                                 <div class="col-md-6 why-choose-me-box">

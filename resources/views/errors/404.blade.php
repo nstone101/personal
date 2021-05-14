@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>404 Page</title>
+    <title>404 Page - NSD Studios</title>
     <!-- Favicon -->
     <link href="{{ asset('fibonacci/adminpanel/assets/img/dummy/favicon.ico') }}" sizes="128x128" rel="shortcut icon" type="image/x-icon" />
     <link href="{{ asset('fibonacci/adminpanel/assets/img/dummy/favicon.ico') }}" sizes="128x128" rel="shortcut icon" />

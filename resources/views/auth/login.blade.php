@@ -12,7 +12,7 @@
                                 <div class="login-box">
                                     <div class="text-center">
                                         <h1 class="text-gray-900 mb-4">{{ __('text.welcome_back') }}</h1>
-                                    </div>
+                                    </div>a
                                     <form class="user" method="POST" action="{{ route('login') }}">
                                         @csrf
 

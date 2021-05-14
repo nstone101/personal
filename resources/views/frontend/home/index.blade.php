@@ -234,7 +234,7 @@
 
             .header.header-shrink .nav-btn-item .nav-btn:hover {
                 background: {{ $color_picker->color_code }};
-                color: #fff!important;
+                color: #fff !important;
             }
             .header.header-shrink .nav-btn-item .nav-btn {
                 color: {{ $color_picker->color_code }};
@@ -480,34 +480,13 @@
                             <div class="row hero-row align-items-center h-100">
                                 <div class="col-lg-7 col-xl-6">
                                     <div class="hero-section-inner wow fadeInUp" data-wow-delay="0.1s">
-                                        <h1 class="hero-title">I'm <br><span id="typed-text"></span></h1>
-                                        <p class="hero-text">I work freelance. Sometimes you want to implement the projects you want.
-                                            You don't want to make mistakes because time is valuable.
-                                            I can advance you and your brand with my ideas.</p>
+                                        <h1 class="hero-title">I'm Nick Stone<br><span id="typed-text"></span></h1>
+                                        <p class="hero-text">Enterprise IT Professional for startups and Small-medium Enterprise Business Clients. I also am known for my ability to leverage and collect mass amounts of data via analytics and create presentable facts to clients to make rational decisions. I've been a government, and frontend development contractor in the past due to my Fullstack background and my UI/UX Development creativity.
+                                            Time is valuable, reach out and i'll get you squared away.
+                                            I'd tell you from the beginning if I didn't think I had something to offer you that would help expand your reach and your company.</p>
                                         <div class="btn-group">
-                                            <a href="#" data-scroll-nav="8" class="default-button">{{ __('Hire Me') }}</a>
+                                            <a href="#" data-scroll-nav="8" class="default-button">{{ __('Hire Me') }}</a><a href="#" data-scroll-nav="8" class="default-button secondary">{{ __('Schedule Consultation') }}</a>
                                         </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- .row -->
-                        @endif
-                    </div>
-                    <!-- .container -->
-                    <a href="#" data-scroll-nav="2" class="down-scroll wow zoomIn">
-                        <i class="fa fa-arrow-down"></i>
-                    </a>
-                </section>
-            @elseif ($homepage_version->choose_version == 2)
-                <section class="hero-section jarallax flex-box-center hero-slider-wrap" id="heroSliderContainer" data-scroll-index="1">
-                    <div class="container h-100">
-                        @if (isset($fixed_content))
-                            <div class="row hero-row align-items-center h-100">
-                                <div class="col-lg-7 col-xl-6">
-                                    <div class="hero-section-inner wow fadeInUp" data-wow-delay="0.1s">
-                                        <h1 class="hero-title">{{ $fixed_content->colored_title }} <br><span id="typed-text-slider"></span></h1>
-                                        <p class="hero-text">{{ $fixed_content->description }}</p>
-                                        <div class="btn-group">
                                             <a href="#" data-scroll-nav="8" class="default-button">{{ __('frontend.hire_me') }}</a>
                                         </div>
                                     </div>
